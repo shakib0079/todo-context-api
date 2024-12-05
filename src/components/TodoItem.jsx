@@ -12,7 +12,9 @@ function TodoItem({ todo }) {
     }
 
     const editTodo = () => {
+        console.log(todoMsg)
         updateTodo(todo.id, {...todo, todo: todoMsg})
+        setIsTodoEditable(false);
     }
 
     return (
